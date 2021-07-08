@@ -2,7 +2,7 @@ import './App.css';
 import React,{useState} from 'react'
 import StudentForm from './Component/studentForm';
 import DisplayResult from './Component/displayResult';
-// import Table from './Component/table';
+import Table from './Component/table';
 
 const App = () => {
   const [student , setStudent]=useState([]);
@@ -59,7 +59,7 @@ const App = () => {
       {studentData && (<button onClick={allData}>save</button>)}
      
       {/* {console.log(student)} */}
-       {/* <Table table={student} deleteHandler={deleteHandler} editHandler={editHandler}/> */}
+       <Table table={student} deleteHandler={deleteHandler} editHandler={editHandler}/>
     </div>
     )
 
